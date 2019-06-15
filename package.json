@@ -1,10 +1,26 @@
 {
-  "name": "vscode-goto-node-modules",
-  "displayName": "vscode-goto-node-modules",
-  "description": "goto node modules in your vue/js file.",
-  "version": "0.0.1",
+  "name": "goto-node-modules",
+  "displayName": "goto node-modules",
+  "description": "goto node modules from vue/js/ts code.",
+  "license": "MIT",
+  "version": "1.0.0",
+  "author": {
+    "name": "ravenq",
+    "e-mail": "flw_dream@126.com"
+  },
+  "publisher": "ravenq",
+  "keywords": [
+    "goto node modules",
+    "node-modules"
+  ],
+  "private": false,
   "engines": {
     "vscode": "^1.35.0"
+  },
+  "icon": "https://github.com/ravenq/vscode-goto-node-modules/blob/master/doc/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravenq/vscode-goto-node-modules.git"
   },
   "categories": [
     "Other"
@@ -14,23 +30,18 @@
     "onLanguage:vue",
     "onLanguage:js"
   ],
-  "main": "./extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
+  "main": "./out/extension.js",
   "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
     "typescript": "^3.3.1",
     "vscode": "^1.1.28",
-    "eslint": "^5.13.0",
+    "tslint": "^5.12.1",
     "@types/node": "^10.12.21",
     "@types/mocha": "^2.2.42"
   }
