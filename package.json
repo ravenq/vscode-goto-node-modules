@@ -1,9 +1,9 @@
 {
-  "name": "goto-node-modules",
-  "displayName": "goto node-modules",
+  "name": "vscode-goto-node-modules",
+  "displayName": "goto node modules",
   "description": "goto node modules from vue/js/ts code.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "ravenq",
     "e-mail": "flw_dream@126.com"
@@ -17,10 +17,14 @@
   "engines": {
     "vscode": "^1.35.0"
   },
-  "icon": "https://github.com/ravenq/vscode-goto-node-modules/blob/master/doc/logo.png",
+  "icon": "doc/logo.png",
+  "bugs": {
+    "url": "https://github.com/ravenq/vscode-goto-node-modules/issues"
+  },
+  "homepage": "https://github.com/ravenq/vscode-goto-node-modules",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ravenq/vscode-goto-node-modules.git"
+    "url": "https://github.com/ravenq/vscode-goto-node-modules"
   },
   "categories": [
     "Other"
